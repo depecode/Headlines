@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/mdl/material.min.css')
+    script(src="/mdl/material.min.js")
+    link(rel="stylesheet", href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  body
+    div(class="mdl-layout mdl-js-layout")
+      header(class="mdl-layout__header mdl-layout__header--scroll")
+        div(class="mdl-layout__header-row")
+          //- <!-- Title -->
+          span(class="mdl-layout-title") Headlines
+          //- <!-- Add spacer, to align navigation to the right -->
+          div(class="mdl-layout-spacer")
+          //- <!-- Navigation -->
+          nav(class="mdl-navigation")
+            a(class="mdl-navigation__link" href="#") Link
+            a(class="mdl-navigation__link" href="#") Link 
+            a(class="mdl-navigation__link" href="#") Link
+            a(class="mdl-navigation__link" href="#") Link
+      div(class="mdl-layout__drawer")
+        span(class="mdl-layout-title") Headlines
+        nav(class="mdl-navigation")
+          a(class="mdl-navigation__link" href="#") Link
+          a(class="mdl-navigation__link" href="#") Link
+          a(class="mdl-navigation__link" href="#") Link
+          a(class="mdl-navigation__link" href="#") Link
+      main(class="mdl-layout__content")
+        div(class="page-content") <!-- Your content goes here -->
+          block content
+
+          //- block footer
+          footer
+          footer(class="mdl-mini-footer")
+            div(class="mdl-mini-footer__left-section")
+              div(class="mdl-logo") Headlines
+              ul(class="mdl-mini-footer__link-list")
+                li
+                  a(href="#") Help
+                li
+                  a(href="#") Privacy & Terms
